@@ -12,6 +12,7 @@ import javax.persistence.Id;
 @ToString
 @Entity
 public class Customer {
+    //Customer entity
     @Id
     private String id;
     private String name;
