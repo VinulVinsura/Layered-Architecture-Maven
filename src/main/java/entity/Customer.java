@@ -13,6 +13,7 @@ import javax.persistence.Id;
 @Entity
 public class Customer {
     //Customer entity
+    //entity class
     @Id
     private String id;
     private String name;
