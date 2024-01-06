@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="773.0" fitWidth="1077.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/dashboard.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="59.0" layoutY="110.0" onAction="#customerButtonOnAction" prefHeight="76.0" prefWidth="237.0" style="-fx-background-color: d4c4fb; -fx-border-color: black;" text="Customer">
+         <font>
+            <Font name="Cooper Black" size="32.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="76.0" fitWidth="90.0" focusTraversable="true" layoutX="971.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../Img/backgrount.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <effect>
+            <ColorAdjust brightness="0.23" contrast="0.13" hue="-0.03" />
+         </effect>
+      </ImageView>
+      <Label layoutX="470.0" layoutY="573.0" prefHeight="112.0" prefWidth="593.0" text="V &amp; S Grocery" textFill="#0d0d0b">
+         <font>
+            <Font name="Century" size="87.0" />
+         </font>
+      </Label>
+      <Label fx:id="timelapse" layoutX="14.0" layoutY="14.0" prefHeight="49.0" prefWidth="188.0" text="HH:MM:SS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="59.0" layoutY="214.0" onAction="#itemButtonOnAction" prefHeight="76.0" prefWidth="237.0" style="-fx-background-color: #a6d273#a6d273; -fx-border-color: #111c05;" text="Items">
+         <font>
+            <Font name="Cooper Black" size="34.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="59.0" layoutY="321.0" onAction="#placeOrderButtonOnAction" prefHeight="76.0" prefWidth="237.0" style="-fx-background-color: #42B4C3; -fx-border-color: black;" text="Place Order">
+         <font>
+            <Font name="Cooper Black" size="32.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="59.0" layoutY="425.0" onAction="#ordersButtonOnAction" prefHeight="76.0" prefWidth="237.0" style="-fx-background-color: #A43EB5; -fx-border-color: black;" text="Orders">
+         <font>
+            <Font name="Cooper Black" size="34.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

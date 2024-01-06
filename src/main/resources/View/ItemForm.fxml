@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itempane" prefHeight="751.0" prefWidth="1091.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="895.0" fitWidth="1131.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/itemForm2.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="itemTB" cache="true" layoutX="14.0" layoutY="302.0" prefHeight="421.0" prefWidth="808.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="126.0" text="Item Code" />
+          <TableColumn fx:id="colDesc" prefWidth="304.0" text="Description" />
+            <TableColumn fx:id="colUnitP" prefWidth="122.0" text="Unit Price" />
+            <TableColumn fx:id="colQty" prefWidth="147.0" text="QTY" />
+            <TableColumn fx:id="colOption" prefWidth="108.0" text="Option" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="texdesc" layoutX="324.0" layoutY="163.0" promptText="description" style="-fx-background-color: #C4D4EC;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="texUnitp" layoutX="75.0" layoutY="235.0" promptText="unit price" style="-fx-background-color: #C4D4EC;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="texqty" layoutX="368.0" layoutY="235.0" promptText="qty" style="-fx-background-color: #C4D4EC;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="texCode" layoutX="21.0" layoutY="163.0" promptText="item code" style="-fx-background-color: #C4D4EC;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Label cache="true" cacheHint="SPEED" layoutX="39.0" layoutY="32.0" prefHeight="101.0" prefWidth="407.0" style="-fx-background-color: #ede#C673716c6;" text="    Item Form" textAlignment="CENTER">
+         <font>
+            <Font name="Algerian" size="57.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="850.0" layoutY="444.0" onAction="#relodeButtonOnAction" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: #113858;" text="Relode" textFill="#fffafa">
+         <font>
+            <Font name="AGA Arabesque" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="850.0" layoutY="513.0" onAction="#saveButtonOnAction" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: #113858;" text="Save" textFill="#fffafa">
+         <font>
+            <Font name="AGA Arabesque" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="850.0" layoutY="644.0" onAction="#backbuttonOnAction" prefHeight="42.0" prefWidth="65.0">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="850.0" layoutY="370.0" onAction="#updateButtonOnAction" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: #113858;" text="Update" textFill="#fffafa">
+         <font>
+            <Font name="AGA Arabesque" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="850.0" layoutY="580.0" onAction="#reportButtonOnAction" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: #113858;" text="Report" textFill="#fffafa">
+         <font>
+            <Font name="AGA Arabesque" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

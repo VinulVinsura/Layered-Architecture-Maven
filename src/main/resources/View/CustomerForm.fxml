@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerpane" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="515.0" fitWidth="1109.0" layoutX="75.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/customer2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="180.0" layoutY="35.0" prefHeight="87.0" prefWidth="682.0" text="          Customer Form" textFill="#1e07d0">
+         <font>
+            <Font name="Algerian" size="57.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="texid" layoutX="47.0" layoutY="146.0" prefHeight="42.0" prefWidth="158.0" promptText="Customer_ID">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="texName" layoutX="262.0" layoutY="157.0" prefHeight="31.0" prefWidth="200.0" promptText="Customer Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="texAddress" layoutX="558.0" layoutY="157.0" prefHeight="31.0" prefWidth="188.0" promptText="Customer Address">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="texSalary" layoutX="834.0" layoutY="157.0" promptText="Customer Salary">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <TableView fx:id="tabCustomer" layoutX="15.0" layoutY="229.0" prefHeight="449.0" prefWidth="775.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="107.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="182.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="211.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="144.0" text="Salary" />
+            <TableColumn fx:id="colOption" prefWidth="130.0" text="Option" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="701.0" layoutY="690.0" onAction="#relodeBAUttonOnAction" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #b76d63;" text="Relode">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="47.0" layoutY="690.0" onAction="#backButtonOnAction" prefHeight="42.0" prefWidth="104.0">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="585.0" layoutY="690.0" onAction="#saveButtonOnAction" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #3fcd86;" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="470.0" layoutY="690.0" onAction="#updateButtonOnAction" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: pink;" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="custIdLable" layoutX="47.0" layoutY="45.0" prefHeight="74.0" prefWidth="176.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="358.0" layoutY="690.0" onAction="#reportButtonOnAction" prefHeight="42.0" prefWidth="89.0" style="-fx-background-color: #4686B0;" text="Report">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

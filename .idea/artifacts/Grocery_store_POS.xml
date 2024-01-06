@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Grocery_store_POS">
+    <output-path>$PROJECT_DIR$/out/artifacts/Grocery_store_POS</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="AppInitializer" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="17" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Grocery_store_POS.jar">
+        <element id="module-output" name="Grocery_store_POS" />
+      </element>
+    </root>
+  </artifact>
+</component>
